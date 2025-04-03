@@ -6,13 +6,11 @@
 
 "use strict"
 
-function volumeOfPyramid() {
+function volumeOfSphere() {
   // Setting the varibles
-  const LENGTH_Of_PYRAMID = parseFloat(document.getElementById("length-of-pyramid").value)
-  const WIDTH_OF_PYRAMID = parseFloat(document.getElementById("width-of-pyramid").value)
-  const HEIGHT_OF_PYRAMID = parseFloat(document.getElementById("height-of-pyramid").value)
-  const volumeOfPyramid = (LENGTH_Of_PYRAMID * WIDTH_OF_PYRAMID * HEIGHT_OF_PYRAMID) / 3
+  const radiusOfTheSphere= parseFloat(document.getElementById("radius-of-the-sphere").value)
+  const volumeOfSphere = (4/3) * Math.PI * Math.pow(radiusOfTheSphere,3)
   // clacualtoins 
   document.getElementById("Volume").innerHTML = 
-  "Volume is: " + volumeOfPyramid.toFixed(2) + " mm³";
+  "Volume is: " + volumeOfSphere.toFixed(2) 
 }
